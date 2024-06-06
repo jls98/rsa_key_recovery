@@ -5,6 +5,7 @@ import math
 def factorize(N, e, tri_dp, tri_dq):
     # patch tri-state to correct length
     max_factor_size = math.ceil(math.log2(N)) // 2
+    print("max factor" + max_factor_size)
     assert max_factor_size == 2048
     p_factor_size = math.ceil(len(tri_dp))
     q_factor_size = math.ceil(len(tri_dq))
